@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Mbti {
 	public static void main(String...args) {
-
+nnnnnn
 		Scanner scan = new Scanner(System.in);
 
 		String[] mbti = {
@@ -43,7 +43,7 @@ public class Mbti {
 
 "facts, things, what is", "ideas, dreams, what could be, philosophical",
 
-"matter of fact, issues-oriented", "sensitive, people-oriented, compassionate",
+"matter of fact, issues-oriented", "sensitive, people-oriented, "compassionate",
 
 "control, govern", "latitude,freedom"};
 
