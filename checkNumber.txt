@@ -1,0 +1,13 @@
+import java.util,Scanner;
+
+public class checkNumbers{
+	public static void main(String[]...arg){
+		Scanner input = new scanner(System.in);
+		System.out.println("Enter a number")
+
+		
+
+
+}
+
+}

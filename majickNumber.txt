@@ -1,0 +1,16 @@
+import java.util;
+
+public class majickNumbers{
+	public static void main(String[] ars){
+		Scanner scanner = new scanner(System.in);
+		
+		int Counter = 0;
+
+		""while( counter < 2; count > num; count++){
+			System.out.println("Enter number : ");
+			int userInput = input.nextInt();
+
+		  }
+			
+	}
+	}

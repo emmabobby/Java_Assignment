@@ -1,0 +1,25 @@
+
+
+public class BiggestNumber {
+	public static void main(String[] args) {
+
+
+        
+        int BiggestNumber = 0;
+        
+      
+        for(int i = 1; i <= 10; i++){
+         System.out.print(i);
+	if(BiggestNumber >=  i){
+	
+	
+    }
+}
+ System.out.println("The highest is: "+ BiggestNumber);
+	
+   }
+}
+
+     	    
+
+

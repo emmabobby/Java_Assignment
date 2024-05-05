@@ -1,0 +1,57 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class SemicolonStoreCheckout {
+
+      private Map<String, Double> productPrices;
+
+    public SemicolonStoreCheckout() {
+        productPrices = new HashMap<>();
+        productPrices.put("Product A", 10.0);
+        productPrices.put("Product B", 20.0);
+      
+    }
+
+    public void startCheckout() {
+        Scanner scanner = new Scanner(System.in);
+        Map<String, Integer> cart = new HashMap<>();
+
+                while (true) {
+            System.out.print("Enter product name (or type 'done' to finish): ");
+            String productName = scanner.nextLine();
+            if (productName.equalsIgnoreCase("done")) {
+                break;
+            }
+            System.out.print("Enter quantity: ");
+            int quantity = scanner.nextInt();
+            scanner.nextLine(); // Consume newline
+            cart.put(productName, quantity);
+        }
+
+         System.out.println("\n--- Customer Invoice ---");
+        double total = 0.0;
+        for (Map.Entry<String, Integer> entry : cart.entrySet()) {
+            String productName = entry.getKey();
+            int quantity = entry.getValue();
+            double price = productPrices.getOrDefault(productName, 0.0);
+            double subtotal = price * quantity;
+            System.out.printf("%s: %d x $%.2f = $%.2f\n", productName, quantity, price, subtotal);
+            total += subtotal;
+        }
+
+        double discount = 0.0; // No discount for now
+        double vat = total * 0.075;
+        double grandTotal = total - discount + vat;
+
+        System.out.printf("\nTotal: $%.2f\n", total);
+        System.out.printf("Discount: $%.2f\n", discount);
+        System.out.printf("VAT (7.5%%): $%.2f\n", vat);
+        System.out.printf("Grand Total: $%.2f\n", grandTotal);
+    }
+
+    public static void main(String[] args) {
+        SemicolonStoreCheckout checkout = new SemicolonStoreCheckout();
+        checkout.startCheckout();
+    }
+}

@@ -1,0 +1,23 @@
+import java.util.scanner
+
+public class ReadingNumbers{
+public static void main(String[]args){
+Scanner input =new Scanner (System.in);
+ 
+System.out.println("Enter a number");
+int number = input.nextInt();
+
+int sum = 0;
+int count = 0;
+
+while (sum < number){
+	System.out.println("Enter a number");
+	int newNumber = input.nextInt();
+	sum = sum + number;
+	count = count + 1; 
+
+
+System.out.printf("the sum is: %d%n, sum);
+  }
+
+}

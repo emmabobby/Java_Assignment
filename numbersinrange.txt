@@ -1,0 +1,6 @@
+print("number\tsquare\tcube") 
+
+for NUMBER in range(6):
+    SQUARE = number ** 2 
+    CUBE = number ** 3   
+    print(f"{number}\t{square}\t{cube}")
